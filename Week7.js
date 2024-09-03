@@ -60,15 +60,15 @@ console.log(nameLengths);
 
 // Assignment 6
 
-// let sumOfNameLengths = 0
-// for (let i = 0; i < nameLengths.length; i++);
-// sumOfNameLengths += nameLengths[i];
-// console.log(sumOfNameLengths);
+let sumOfNameLengths = 0
+for (let i = 0; i < nameLengths.length; i++) {
+sumOfNameLengths += nameLengths[i];}
+console.log(sumOfNameLengths);
 
 // Assignment 7
 
 function greeting(word, n) {
-  let result = " "
+  let result = ""
 for (let i = 0; i < n; i++) {
   result += word;
 }
@@ -79,6 +79,72 @@ console.log(greeting("Hello", 3));
 
 // Assignment 8
 
+function fullName(firstName, lastName){
+  return `${firstName} ${lastName}`;
+}
+console.log(fullName("Dallin", "Larsen"));
 
+// Assignment 9
 
+function isSumGreaterThan100(numbers){
+  let sum = 0;
 
+  for (let i = 0; i < numbers.length; i++){
+    sum += numbers[i];
+  }
+  return sum > 100;
+}
+console.log(isSumGreaterThan100([25, 28, 75]));
+
+// Assignment 10
+
+function averageOfNumbers(numbers) {
+  let sum = 0;
+  for (i = 0; i < numbers.length; i++){
+    sum += numbers[i];
+  }
+    return sum / numbers.length
+}
+
+console.log(averageOfNumbers([1, 28, 36, 14, 50]));
+
+// Assignment 11
+
+function averageOfArray(numbers){
+let sum = 0
+for (i = 0; i < numbers.length; i++){
+  sum += numbers[i];}
+  return sum / numbers.length;
+}
+function isArrayOneGreaterThanArrayTwo(array1, array2){
+let average1 = averageOfArray(array1);
+let average2 = averageOfArray(array2);
+
+return average1 > average2;
+
+}
+
+console.log(isArrayOneGreaterThanArrayTwo([1,2,3,4,8], [1,2,3,4,5]));
+
+// Assignment 12
+
+function willBuyDrink(isHotOutside, moneyInPocket){
+  if (isHotOutside && (moneyInPocket > 10.50)){
+    return true
+  } else{ 
+    return false
+  }
+}
+console.log(willBuyDrink(true, 20));
+
+// Assignment 13
+
+// This function checks to see if the individual is both 18 years of age or older and currently holds a Costco membership. If SourceBuffer, the individual is eligible for the Program.
+
+function checkEligibility(age, isMember){
+if (age >= 18 && (isMember = true)){
+  return "Eligible"
+} else{
+  return "Not Eligible"
+}}
+console.log(checkEligibility(18, true));
